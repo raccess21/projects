@@ -1,0 +1,21 @@
+Package: bizreport
+Title: Bizreport
+Description: Create business reports with ease
+Version: 1.0.0
+Authors@R: person("Anand", "Rahul", email = "rahulanand0021@outlook.com", role = c("aut", "cre", "cph"))  
+License: MIT + file LICENSE
+Encoding: UTF-8
+Video: "https://www.youtube.com"
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports:
+    tibble (>= 3.0.0),
+    dplyr (>= 1.0.0),
+    ggplot2,
+    rlang,
+    stringr,
+    lubridate,
+    here,
+    magick
+RoxygenNote: 7.3.2
