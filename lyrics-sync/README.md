@@ -8,10 +8,24 @@ It also lets you **edit, timestamp, or delete lyric lines** with an easy-to-use 
 ## ✨ Features
 - Play `.mp3` or `.wav` audio files.
 - Load matching `.lrc` lyrics (if present).
-- **Click a lyric line** → add a timestamp for the current music position.
-- **Delete a lyric line** → permanently removes it from the `.lrc` file.
-- **Edit lyrics directly** by clicking them.
+
+### Main Bar
+- **Load Audio** → Open File Dialog and load mp3 or wav file.
+- **Play/Pause** → Control playback.
+- **Reload Lyrics** → Re-read `.lrc` file.
+- **Delay All** → Add a delay to all lyric lines.
+- **Hasten All** → Remove a delay from all lyric lines.
+
+### Lyrics Line Features
+- **Play** → Play from selected Timestap.
+- **+** → Add Delay to selected Timestamp.
+- **-** → Remove Delay from selected Timestamp.
+- **Timestamp** → Apply current time to selected Timestamp.
+- **Edit Lyrics** → Click lyric to edit lyric text.
+- **x** → Remove selected lyric line.
+- **↓** → Add Empty Line below selected lyric line.
 - **Highlight current line** while the song is playing.
+- **Current line highlight:** See which lyric is currently playing in real time.
 - Auto-wrapping for long lyric lines.
 - `.lrc` file updates instantly (no need to manually save).
 
@@ -45,14 +59,6 @@ python sync.py
 3. Open an `.mp3` or `.wav` file:
    - If a matching `.lrc` exists (`filename.lrc`), it will load automatically.
    - If no `.lrc` exists, you can add lines manually.
-
----
-
-## 🎛 Controls
-- **▶ Play/Pause:** Control playback of the audio file.
-- **🖱 Click lyric line:** Add or edit a timestamp.
-- **🗑 Delete line:** Remove the entire lyric line (both from UI and `.lrc` file).
-- **Current line highlight:** See which lyric is currently playing in real time.
 
 ---
 

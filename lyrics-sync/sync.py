@@ -160,7 +160,7 @@ class LyricLine(tk.Frame):
 
 
 class LyricSyncer:
-    def __init__(self, master):
+    def __init__(self, master, audio_file=""):
         self.master = master
         master.title("Lyrics Sync")
         master.configure(bg="#f8f9fa")
@@ -170,7 +170,7 @@ class LyricSyncer:
         except:
             pass
         
-        self.audio_file = "Sanson Ki Mala Peh Simroon Main Nusrat Fateh Ali Khan.mp3"
+        self.audio_file = audio_file
         self.lrc_file = ""
         self.lyrics = []
         self.lyric_lines = []
